@@ -1,7 +1,4 @@
 README.txt
-Here is the translation and optimization of your text for a GitHub README file:
-
-Generated markdown
 # Project Mycelium: An Architectural Approach to Long-Term Memory Management in LLMs
 
 ## 1. Abstract
