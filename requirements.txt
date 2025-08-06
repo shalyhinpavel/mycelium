@@ -1,0 +1,6 @@
+pydantic
+httpx[http2]
+aiofiles
+python-dotenv
+gradio
+huggingface-hub
