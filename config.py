@@ -6,8 +6,7 @@
 AVAILABLE_MODELS = [
     "deepseek-ai/DeepSeek-V3",
     "meta-llama/Llama-3.3-70B-Instruct-Turbo",
-    "openai/gpt-oss-120b",
-    "mistralai/Mistral-7B-Instruct-v0.3"
+    "openai/gpt-oss-120b"
 ]
 
 # The model that will be selected by default when the application starts
