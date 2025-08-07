@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 """
-adaptive_parser.py - Проект "Феникс", Компонент "Цербер" v1.4 (Final)
+adaptive_parser.py - Mycelium Project, "Phoenix" Component v1.4 (Final)
 
-Изменения:
-- Восстановлен полный каскад парсинга для максимальной устойчивости.
-- Сначала ищем JSON в Markdown, потом пытаемся парсить напрямую,
-  и только потом переходим к семантическому извлечению.
+Changes:
+- Restored the full parsing cascade for maximum robustness.
+- First, we search for JSON in Markdown, then try to parse directly,
+  and only then proceed to semantic extraction.
 """
 import json
 import re
@@ -22,26 +22,26 @@ class ParsingError(Exception):
 class AdaptiveSemanticParser:
 
     def __init__(self):
-        # Компилируем паттерн для Markdown заранее
+        # Pre-compile the pattern for Markdown
         self.json_block_pattern = re.compile(
             r"```(?:json)?\s*\n({.*?})\n\s*```", re.DOTALL)
 
     def _clean_value(self, value: str) -> str:
-        # Убираем кавычки
+        # Remove quotes
         if value.startswith('"') and value.endswith('"'):
             value = value[1:-1]
-        # Убираем точку в конце для чисел
+        # Remove a trailing dot for numbers
         if value.endswith('.') and value[:-1].replace('.', '', 1).isdigit():
             value = value[:-1]
         return value
 
     def _validate_and_dump(self, data: Any, schema: Type[BaseModel]) -> Dict[str, Any]:
-        """Вспомогательная функция для валидации и возврата данных."""
+        """Helper function to validate and return data."""
         validated_model = schema.model_validate(data)
         return validated_model.model_dump()
 
     def _parse_semantic(self, text: str, schema: Type[BaseModel]) -> Dict[str, Any]:
-        """Финальный слой: семантическое извлечение из естественного текста."""
+        """Final layer: semantic extraction from natural text."""
         extracted_data: Dict[str, Any] = {}
         schema_fields = schema.model_fields
 
@@ -60,33 +60,33 @@ class AdaptiveSemanticParser:
 
     def parse(self, raw_llm_output: str, expected_schema: Type[BaseModel]) -> Dict[str, Any]:
         """
-        Главный метод, который пропускает вывод LLM через полный каскад парсеров.
+        The main method that passes LLM output through the full cascade of parsers.
         """
         if not raw_llm_output or not raw_llm_output.strip():
             raise ParsingError("Input text from LLM is empty or whitespace.")
 
-        # --- Слой 1: Поиск и извлечение JSON из блоков Markdown ---
+        # --- Layer 1: Find and extract JSON from Markdown blocks ---
         match = self.json_block_pattern.search(raw_llm_output)
         if match:
             json_str = match.group(1)
             try:
-                # Пытаемся распарсить извлеченный JSON
+                # Try to parse the extracted JSON
                 return self._validate_and_dump(json.loads(json_str), expected_schema)
             except (json.JSONDecodeError, ValidationError) as e:
-                # Если даже он сломан, мы не сдаемся, а передаем его дальше
+                # Even if it's broken, we don't give up and pass it on
                 raw_llm_output = json_str
 
-        # --- Слой 2: Прямой парсинг (если это был чистый JSON или извлеченный, но сломанный) ---
+        # --- Layer 2: Direct parsing (if it was clean JSON or extracted but broken) ---
         try:
             return self._validate_and_dump(json.loads(raw_llm_output), expected_schema)
         except (json.JSONDecodeError, ValidationError):
             pass
 
-        # --- Слой 3 (Финальный): Семантическое извлечение из текста ---
+        # --- Layer 3 (Final): Semantic extraction from text ---
         try:
             return self._parse_semantic(raw_llm_output, expected_schema)
         except (ParsingError, ValidationError) as e:
-            # Если даже семантика не помогла, значит, это конец.
+            # If even semantics didn't help, then it's the end.
             raise ParsingError(
                 "Failed to parse or validate LLM output after all layers.",
                 context={"final_error": str(e)}
