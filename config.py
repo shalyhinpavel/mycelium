@@ -13,7 +13,7 @@ AVAILABLE_MODELS = [
 DEFAULT_MODEL = AVAILABLE_MODELS[0]
 
 # <<< REMOVED >>> The old MODEL_NAME variable is no longer needed
-# MODEL_NAME = "deepseek-ai/DeepSeek-V2"
+# MODEL_NAME = "deepseek-ai/DeepSeek-V3"
 
 print(f"--- CONFIG LOADED: Default model is '{DEFAULT_MODEL}' ---")
 print(f"--- Available models: {', '.join(AVAILABLE_MODELS)} ---")
