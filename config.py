@@ -1,27 +1,6 @@
-# Файл: config.py
-#
-# Это ваш центральный "пульт управления" моделями.
-# Чтобы переключить модель для ВСЕХ тестов, просто измените
-# значение переменной MODEL_NAME здесь.
+File: config.py
+--- SELECT YOUR MODEL HERE ---
 
-# --- ВЫБЕРИТЕ ВАШУ МОДЕЛЬ ЗДЕСЬ ---
-
-# -- Кандидат 1: Llama 3.1 (70B) --
-# Отлично подходит для тестирования "Мицелия"
-# MODEL_NAME = "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo"
-
-# -- Кандидат 2: Gemma-2 (27B) --
-# Быстрый и послушный, хороший вариант для отладки
-# MODEL_NAME = "google/gemma-2-27b-it"  # Используем эту по умолчанию
-
-# -- Кандидат 3: DeepSeek-V3 --
-# Мощный "претендент" для сравнения с лучшими
 MODEL_NAME = "deepseek-ai/DeepSeek-V3"
 
-# -- Эталон ("Оракул"): Cogito --
-# Используйте для финального сравнения
-# MODEL_NAME = "deepcogito/cogito-v2-preview-llama-405B"
-
-
-# --- Не трогайте код ниже ---
 print(f"--- CONFIG LOADED: Using model '{MODEL_NAME}' ---")
