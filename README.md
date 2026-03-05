@@ -12,18 +12,39 @@ We don't believe in marketing charts. We believe in reproducible code.
 
 Instead of hosting an interactive demo that hides latency and cost metrics, we provide you with the exact scripts and a Read-Only API key to run the benchmarks yourself.
 
-### Included Benchmarks:
-- **Vector-Only RAG vs. Graph-Enhanced RAG:** A demonstration of how traditional vector search fails on multi-hop reasoning questions, and how Mycelium's resonance propagation recovers the full evidence chain.
+### Included Datasets:
+- **MuSiQue-Ans (100):** 100 multi-hop reasoning questions from the official MuSiQue dataset. Great for testing deep chain retrieval.
+- **HotpotQA (Hard-100):** 100 challenging multi-hop examples from the HotpotQA dev set. Ideal for testing recall across broad context.
 
 ## Getting Started
 
-1. Clone this repository
-2. Install dependencies: `pip install -r requirements.txt`
-3. Copy the environment file: `cp .env.example .env`
-4. Add your OpenAI API key (for the baseline vector comparison).
-5. Run the scripts in the `/scripts` directory.
+1. **Clone this repository**
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Configure environment:**
+   ```bash
+   cp .env.example .env
+   # Ensure MYCELIUM_API_KEY is present
+   ```
+4. **Run Benchmarks:**
 
-*Detailed instructions are provided inside each benchmark script.*
+#### A. MuSiQue Benchmark (Deep Reasoning)
+```bash
+python scripts/benchmark_mycelium.py --dataset datasets/musique_100.json --personality MUSIQUE_BENCHMARK_100 --limit 100
+```
+
+#### B. HotpotQA Benchmark (Complex Retrieval)
+```bash
+python scripts/benchmark_mycelium.py --dataset datasets/hotpotqa_100.json --personality HOTPOT_HARD_100_2 --limit 100
+```
+
+### Which one to choose?
+- **MuSiQue** is more difficult. It requires connecting 2-4 disconnected facts. Run this if you want to see how Mycelium handles "needle in a haystack" logic.
+- **HotpotQA** is a standard for multi-hop RAG. Run this to compare Mycelium against your existing vector baselines.
+
+*Wait for the final metrics (Hit Rate and MRR) to appear.*
 
 ## License
 MIT License. Feel free to use these scripts to benchmark your own RAG systems against Mycelium.
