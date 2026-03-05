@@ -1,43 +1,29 @@
----
-title: Mycelium
-emoji: 🧠
-colorFrom: indigo
-colorTo: gray
-sdk: gradio
-sdk_version: 5.41.0
-app_file: app.py
-pinned: true
-license: apache-2.0
-short_description: Cognitive accelerator for medium-sized LLMs
----
+# Mycelium: Reproducibility & Benchmarks
+**The repository where it all started.**
 
-![alt text](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
+Mycelium began as an open-source experiment to solve the context degradation ("amnesia") problem in LLMs using asynchronous cognitive snapshots. You can explore the original Gradio application and Gateway code in the earlier Git commits of this repository.
 
-Mycelium: Solving the "Amnesia" and Long-Term Memory Problem in LLMs
-Modern LLMs, including the latest models, suffer from context degradation. In long dialogues, they forget key facts, making them unreliable partners. Mycelium is a lightweight architecture that solves this problem by asynchronously distilling the dialogue into a structured "Cognitive Snapshot."
-This allows the LLM to maintain a focused and relevant context for a virtually unlimited amount of time.
-How does it work?
-Instead of passing the entire "noise" of the dialogue history to the model, Mycelium works in the background to extract only the most important essence.
+Today, Mycelium has evolved into a fully managed, industrial-grade Graph RAG engine capable of deterministic multi-hop reasoning. 
 
-    participant User as "User"
-    participant Gateway as "Mycelium Gateway"
-    participant Engine as "LLM Engine"
-    participant SnapshotDB as "Snapshot Storage"
+To maintain the spirit of open-source and builder-centric transparency, we have repurposed this repository into the **Mycelium Benchmark Suite**.
 
-    User->>Gateway: Request
-    Gateway->>SnapshotDB: Load snapshot
-    SnapshotDB-->>Gateway: Current snapshot
-    
-    Gateway->>Engine: Generate response (using snapshot)
-    Engine-->>Gateway: Response
-    
-    Gateway-->>User: Send response (instantly)
-    
-    activate Gateway
-    Gateway->>Gateway: Initiate background distillation
-    deactivate Gateway
-    
-    Gateway->>Engine: Update snapshot (asynchronously)
-    Engine-->>Gateway: Data for update
-    
-    Gateway->>SnapshotDB: Save new snapshot```
+## The Leverage Rule
+We don't believe in marketing charts. We believe in reproducible code.
+
+Instead of hosting an interactive demo that hides latency and cost metrics, we provide you with the exact scripts and a Read-Only API key to run the benchmarks yourself.
+
+### Included Benchmarks:
+- **Vector-Only RAG vs. Graph-Enhanced RAG:** A demonstration of how traditional vector search fails on multi-hop reasoning questions, and how Mycelium's resonance propagation recovers the full evidence chain.
+
+## Getting Started
+
+1. Clone this repository
+2. Install dependencies: `pip install -r requirements.txt`
+3. Copy the environment file: `cp .env.example .env`
+4. Add your OpenAI API key (for the baseline vector comparison).
+5. Run the scripts in the `/scripts` directory.
+
+*Detailed instructions are provided inside each benchmark script.*
+
+## License
+MIT License. Feel free to use these scripts to benchmark your own RAG systems against Mycelium.
