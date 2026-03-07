@@ -11,7 +11,6 @@ load_dotenv()
 
 # Config
 BASE_URL = "https://mycelium-service-e7auq33oka-ey.a.run.app"
-API_KEY = os.getenv("MYCELIUM_API_KEY")
 
 def load_test_cases(dataset_path: str, limit: int = 100) -> List[Dict[str, Any]]:
     """
@@ -69,8 +68,9 @@ def load_test_cases(dataset_path: str, limit: int = 100) -> List[Dict[str, Any]]
         return []
 
 def run_benchmark(dataset_path: str, personality_id: str, limit: int = 50, args=None):
-    if not API_KEY:
-        print("❌ Error: MYCELIUM_API_KEY not found in .env file.")
+    api_key = os.getenv("MYCELIUM_MUSIQUE_API_KEY") if "MUSIQUE" in personality_id else os.getenv("MYCELIUM_HOTPOT_API_KEY") if "HOTPOT" in personality_id.upper() else os.getenv("MYCELIUM_API_KEY")
+    if not api_key:
+        print("❌ Error: Valid MYCELIUM API KEY not found in .env file.")
         return
 
     print(f"\n🍄 RUNNING MYCELIUM BENCHMARK (GOLD-ALIGNED)")
@@ -83,7 +83,7 @@ def run_benchmark(dataset_path: str, personality_id: str, limit: int = 50, args=
         return
 
     total_queries = len(cases)
-    headers = {"X-API-Key": API_KEY}
+    headers = {"X-API-Key": api_key}
     answer_acc_count = 0
     full_recall_count = 0
     total_mrr_all = []
@@ -112,11 +112,11 @@ def run_benchmark(dataset_path: str, personality_id: str, limit: int = 50, args=
                     "limit": 10,
                     "hops": 3,              # Back to 3-hop for Recall recovery
                     "entity_top_k": 5,      # High-precision anchor extraction
-                    "resonance_decay": 0.3, # Deeper flow for bridge discovery
-                    "resonance_power": 1.5, # Slightly sharper peaks
-                    "w_static": 0.1,        # Minimal noise
-                    "w_resonance": 0.7,     # Stronger bridges
-                    "w_reranker": 2.2,      # Semantic validation
+                    "resonance_decay": 0.1, # Optimized for HotpotQA
+                    "resonance_power": 1.5, 
+                    "w_static": 0.1,        # Optimized
+                    "w_resonance": 0.7,
+                    "w_reranker": 2.5,      # Optimized
                     "w_boost": 0.0,         # Pure Physics base
                     "auto_tag_extraction": True,
                     "deep_search_threshold": 0.55,
@@ -132,19 +132,22 @@ def run_benchmark(dataset_path: str, personality_id: str, limit: int = 50, args=
                     nodes = response.json().get("results", [])
                     break # Success, exit retry loop
                 elif response.status_code == 429:
-                    print(f"   ⚠️ Rate limit (429). Retrying in 5s... ({retries-1} left)")
-                    time.sleep(5)
+                    wait_time = (2 ** (3 - retries)) * 5 + 2
+                    print(f"   ⚠️ Rate limit (429). Retrying in {wait_time}s... ({retries-1} left)")
+                    time.sleep(wait_time)
                     retries -= 1
                 else:
                     print(f"   ❌ API Error {response.status_code}: {response.text}")
                     break # Non-retryable error, exit retry loop
             except requests.exceptions.Timeout:
-                print(f"   ❌ Request timed out. Retrying... ({retries-1} left)")
-                time.sleep(2)
+                wait_time = (2 ** (3 - retries)) * 2
+                print(f"   ❌ Request timed out. Retrying in {wait_time}s... ({retries-1} left)")
+                time.sleep(wait_time)
                 retries -= 1
             except requests.exceptions.ConnectionError as e:
-                print(f"   ❌ Connection Error: {e}. Retrying... ({retries-1} left)")
-                time.sleep(2)
+                wait_time = (2 ** (3 - retries)) * 2
+                print(f"   ❌ Connection Error: {e}. Retrying in {wait_time}s... ({retries-1} left)")
+                time.sleep(wait_time)
                 retries -= 1
             except Exception as e:
                 print(f"   ❌ Unexpected Request Error: {e}")
@@ -199,6 +202,9 @@ def run_benchmark(dataset_path: str, personality_id: str, limit: int = 50, args=
         
         print(f"[{idx+1}/{total_queries}] Q: {query[:50]}...")
         print(f"   {status} | Recall: {recall:.2f} | Ans Hit: {'Yes' if found_target else 'No'} | {duration:.2f}s")
+        
+        # --- Rate Limit Buffer ---
+        time.sleep(2) 
 
     # --- Final Report ---
     avg_recall = (sum(total_recall_all) / total_queries) * 100 if total_queries > 0 else 0
