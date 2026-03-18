@@ -1,0 +1,1143 @@
+[
+  {
+    "id": "6",
+    "question": "I have an element in mind and would like you to identify the person it was named after. Here's a clue: The element's atomic number is 9 higher than that of an element discovered by the scientist who discovered Zirconium in the same year.",
+    "answer": "Mendelevium is named after Dmitri Mendeleev.",
+    "gold_titles": [
+      "Zirconium",
+      "Uranium",
+      "Periodic table",
+      "Martin Heinrich Klaproth",
+      "Mendelevium"
+    ],
+    "reasoning_types": "Numerical reasoning | Multiple constraints | Temporal reasoning"
+  },
+  {
+    "id": "11",
+    "question": "As of July 1, 2024, what is the parent company of the current record label of the singer of Edge of Seventeen?",
+    "answer": "Warner Music Group",
+    "gold_titles": [
+      "Modern Records (1980)",
+      "Edge of Seventeen",
+      "Reprise Records",
+      "Atlantic Records",
+      "Warner Records",
+      "Stevie Nicks",
+      "Warner Music Group"
+    ],
+    "reasoning_types": "Tabular reasoning | Multiple constraints"
+  },
+  {
+    "id": "527",
+    "question": "What is the percentage increase of total deaths of Japanese during World War One versus World War Two? Use the largest number count found to calculate as these numbers are often ranges.",
+    "answer": "66409.3% increase",
+    "gold_titles": [
+      "World War I casualties",
+      "World War II casualties"
+    ],
+    "reasoning_types": "Numerical reasoning | Tabular reasoning"
+  },
+  {
+    "id": "16",
+    "question": "On March 7th, 2012, the director James Cameron explored a very deep underseas trench.  As of August 3, 2024, how many times would the tallest building in San Francisco fit end to end from the bottom of the New Britain Trench to the surface of the ocean? The answer should be a rounded-off whole number.   ",
+    "answer": "28",
+    "gold_titles": [
+      "Solomon Sea#Deepest point",
+      "James Cameron",
+      "List of tallest buildings in San Francisco"
+    ],
+    "reasoning_types": "Numerical reasoning | Tabular reasoning | Post processing | Temporal reasoning"
+  },
+  {
+    "id": "19",
+    "question": "As of August 4, 2024, in what state was the first secretary of the latest United States federal executive department born?",
+    "answer": "Pennsylvania",
+    "gold_titles": [
+      "Tom Ridge",
+      "United States federal executive departments#Former departments",
+      "United States Secretary of Homeland Security"
+    ],
+    "reasoning_types": "Tabular reasoning | Multiple constraints"
+  },
+  {
+    "id": "20",
+    "question": "As of August 1 2024, what is the most recently described genus of Colosteidae?",
+    "answer": "Deltaherpeton, first described in 2010",
+    "gold_titles": [
+      "Greererpeton",
+      "Deltaherpeton",
+      "Colosteidae",
+      "Pholidogaster"
+    ],
+    "reasoning_types": "Tabular reasoning | Temporal reasoning"
+  },
+  {
+    "id": "24",
+    "question": "Giorgio Rognoni was an Italian professional footballer who played as a midfielder. 10 years after his death who was the midfielder who played in Milan that was born in Besana in Brianza,?",
+    "answer": "Demetrio Albertini",
+    "gold_titles": [
+      "1996%E2%80%9397 AC Milan season",
+      "Giorgio Rognoni",
+      "Demetrio Albertini"
+    ],
+    "reasoning_types": "Numerical reasoning"
+  },
+  {
+    "id": "32",
+    "question": "As of 2010, if you added the number of times Brazil had won the World Cup to the amount of times the Chicago Bulls had won the NBA Championship and multiplied this number by the amount of times the Dallas Cowboys had won the Super Bowl, what number are you left with?",
+    "answer": "55",
+    "gold_titles": [
+      "Chicago Bulls",
+      "FIFA World Cup",
+      "Dallas Cowboys"
+    ],
+    "reasoning_types": "Numerical reasoning | Tabular reasoning"
+  },
+  {
+    "id": "544",
+    "question": "Which of these series was published earliest? Wedding Peach, Tokyo Mew Mew, Sailor Moon",
+    "answer": "Sailor Moon",
+    "gold_titles": [
+      "Wedding Peach",
+      "Sailor Moon",
+      "Tokyo Mew Mew"
+    ],
+    "reasoning_types": "Multiple constraints"
+  },
+  {
+    "id": "551",
+    "question": "Which angle is greater: the recommended angle a glass should be tilted when pouring a pint of Guinness, or the angle the nose of a light aircraft is tilted to effect liftoff?",
+    "answer": "The recommended angle a glass should be tilted when pouring a pint of Guinness",
+    "gold_titles": [
+      "Takeoff",
+      "Guinness"
+    ],
+    "reasoning_types": "Multiple constraints"
+  },
+  {
+    "id": "43",
+    "question": "As of 2023, how many more employees does the company alphabetically first by ticker symbol in the S&P500 have than the company alphabetically 2nd to last by ticker symbol in the S&P500?",
+    "answer": "8,350",
+    "gold_titles": [
+      "List of S%26P 500 companies",
+      "Agilent Technologies",
+      "Zebra Technologies"
+    ],
+    "reasoning_types": "Numerical reasoning | Tabular reasoning | Multiple constraints"
+  },
+  {
+    "id": "555",
+    "question": "When Metallica released its album \"Master of Puppets,\" how old were founding members James Hetfield and Lars Ulrich?",
+    "answer": "22",
+    "gold_titles": [
+      "Master of Puppets",
+      "Lars Ulrich",
+      "James Hetfield"
+    ],
+    "reasoning_types": "Temporal reasoning"
+  },
+  {
+    "id": "569",
+    "question": "Who was the MVP in the season that Cam Plante played in the National Hockey League?",
+    "answer": "Wayne Gretzky",
+    "gold_titles": [
+      "Cam Plante",
+      "1984%E2%80%9385 NHL season"
+    ],
+    "reasoning_types": "Tabular reasoning | Multiple constraints"
+  },
+  {
+    "id": "60",
+    "question": "This individual won a Best Director Award at the 33rd Japan Academy Prize ceremony and is known for having directed a film that briefly surpassed the Godfather as the highest-grossing film in Japan for a short time. Which film was longer - The Godfather or his film - and by how many minutes?",
+    "answer": "The Godfather (1972) was longer than Submersion in Japan (1973) by 32 minutes.",
+    "gold_titles": [
+      "Japan Academy Film Prize",
+      "The Godfather",
+      "Submersion of Japan",
+      "Daisaku Kimura"
+    ],
+    "reasoning_types": "Numerical reasoning | Tabular reasoning | Multiple constraints"
+  },
+  {
+    "id": "78",
+    "question": "Of the two wonders of the ancient world that were statues, how much shorter was the taller of the two compared to the tallest statue in Japan as of 2024?",
+    "answer": "222 ft",
+    "gold_titles": [
+      "List of tallest statues",
+      "Colossus of Rhodes",
+      "Statue of Zeus at Olympia",
+      "Seven Wonders of the Ancient World#Wonders"
+    ],
+    "reasoning_types": "Numerical reasoning | Tabular reasoning | Multiple constraints"
+  },
+  {
+    "id": "590",
+    "question": "The Nintendo Entertainment System shipped with a main processor that was a derivative of the CPU in an Apple Computer that was released after the Apple 1 and before 1980. When was the original model Apple device I am referring to discontinued?",
+    "answer": "1979",
+    "gold_titles": [
+      "Apple II (original)",
+      "List of Apple products",
+      "Ricoh 2A03",
+      "Nintendo Entertainment System",
+      "MOS Technology 6502"
+    ],
+    "reasoning_types": "Multiple constraints | Temporal reasoning"
+  },
+  {
+    "id": "82",
+    "question": "Which section of IPSC Australia Inc. is larger than Honshu and smaller than Sumatra by area?",
+    "answer": "Victoria and Tasmania",
+    "gold_titles": [
+      "South Australia",
+      "IPSC Australia Inc",
+      "Honshu",
+      "Victoria (state)",
+      "Western Australia",
+      "Northern Territory",
+      "Sumatra",
+      "Queensland",
+      "Australian Capital Territory",
+      "Tasmania",
+      "New South Wales"
+    ],
+    "reasoning_types": "Numerical reasoning | Tabular reasoning | Multiple constraints"
+  },
+  {
+    "id": "595",
+    "question": "In the same year that HMS Holland 1 was launched, a British monarch died. How long had their predecessor ruled for? ",
+    "answer": "6 years, 11 months, 25 days.",
+    "gold_titles": [
+      "Queen Victoria",
+      "1901",
+      "William IV",
+      "HMS Holland 1"
+    ],
+    "reasoning_types": "Numerical reasoning"
+  },
+  {
+    "id": "594",
+    "question": "What does Lose Your Way by the British rock band Love Amongst Ruin have in common with Sally Lunn Buns?",
+    "answer": "They're both made in Bath",
+    "gold_titles": [
+      "Bath, Somerset#Culture",
+      "Sally Lunn bun",
+      "Lose Your Way (album)"
+    ],
+    "reasoning_types": "Multiple constraints | Post processing"
+  },
+  {
+    "id": "598",
+    "question": "A certain singer won the Grammy Award for Song of the Year in 2008 and in the same year, sang at a prominent person's 90th Birthday Party concert in London. How many vowels are in the given first name of the person who the birthday party was for?",
+    "answer": "4",
+    "gold_titles": [
+      "Grammy Award for Song of the Year#2000s",
+      "Amy Winehouse",
+      "Nelson Mandela"
+    ],
+    "reasoning_types": "Numerical reasoning | Multiple constraints | Temporal reasoning"
+  },
+  {
+    "id": "93",
+    "question": "How many of Hitler's three couriers of his last will and other political documents died after 1980?",
+    "answer": "1",
+    "gold_titles": [
+      "Wilhelm Zander",
+      "Willy Johannmeyer",
+      "Last will and testament of Adolf Hitler",
+      "Heinz Lorenz"
+    ],
+    "reasoning_types": "Temporal reasoning"
+  },
+  {
+    "id": "101",
+    "question": "In the first movie that Emma Stone won an Academy Award for Best Actress in, did her costar win an Academy Award for Best Actor?",
+    "answer": "Ryan Gosling was nominated for an Academy Award for Best Actor in La La Land, but didn't win.",
+    "gold_titles": [
+      "89th Academy Awards",
+      "Emma Stone",
+      "La La Land#Cast"
+    ],
+    "reasoning_types": "Multiple constraints | Post processing | Temporal reasoning"
+  },
+  {
+    "id": "615",
+    "question": "Which 1963 Disney film starred the same actress who played a dual role in a Disney film two years earlier about twins who plot to reunite their separated parents?",
+    "answer": "Summer Magic",
+    "gold_titles": [
+      "Greyfriars Bobby (film)",
+      "Babes in Toyland (1961 film)",
+      "List of Walt Disney Pictures films",
+      "Miracle of the White Stallions",
+      "Savage Sam (film)",
+      "Nikki: Wild Dog of the North",
+      "The Sword in the Stone (1963 film)",
+      "Son of Flubber",
+      "The Absent-Minded Professor",
+      "One Hundred and One Dalmatians",
+      "The Parent Trap (1961 film)"
+    ],
+    "reasoning_types": "Numerical reasoning | Tabular reasoning | Multiple constraints | Temporal reasoning"
+  },
+  {
+    "id": "108",
+    "question": "If you take the height of the Eiffel Tower in metres, add the number of arrondissements in Paris and subtract the street number of the official residence of the French prime minister, is the final answer a prime number?",
+    "answer": "Yes",
+    "gold_titles": [
+      "Arrondissements of Paris",
+      "Eiffel Tower",
+      "H%C3%B4tel Matignon"
+    ],
+    "reasoning_types": "Numerical reasoning | Post processing"
+  },
+  {
+    "id": "109",
+    "question": "Of the 3 largest canary islands, which has the hottest mean temperature in July as of 2024? ",
+    "answer": "Tenerife",
+    "gold_titles": [
+      "Tenerife",
+      "Gran Canaria",
+      "Canary Islands",
+      "Fuerteventura"
+    ],
+    "reasoning_types": "Numerical reasoning | Multiple constraints"
+  },
+  {
+    "id": "110",
+    "question": "As of 1st August 2024, Are the actors who play Summer and Luke in the OC in anything else together?",
+    "answer": "Yes, Nashville series 5. ",
+    "gold_titles": [
+      "The O.C.",
+      "Chris Carmack",
+      "Rachel Bilson"
+    ],
+    "reasoning_types": "Multiple constraints"
+  },
+  {
+    "id": "625",
+    "question": "How much larger was the concert capacity of the venue where Led Zeppelin recorded \"The Song Remains the Same\" than the venue where AC/DC recorded their first live album?",
+    "answer": "16,500",
+    "gold_titles": [
+      "DC discography#Live albums",
+      "Madison Square Garden",
+      "If You Want Blood You%27ve Got It",
+      "The Song Remains the Same (album)",
+      "The Apollo, Glasgow"
+    ],
+    "reasoning_types": "Numerical reasoning"
+  },
+  {
+    "id": "113",
+    "question": "What medal was the captain of The RMS Titanic awarded by King Edward VII?",
+    "answer": "The Transport Medal",
+    "gold_titles": [
+      "Titanic",
+      "Edward Smith (sea captain)"
+    ],
+    "reasoning_types": "Multiple constraints"
+  },
+  {
+    "id": "115",
+    "question": "As of August 1, 2024, which player who scored more than 10 goals in the 2022 Argentine Premier League season also played for Elche in Spain?",
+    "answer": "Franco Cristaldo scored more than 10 goals that year and also played for Elche.",
+    "gold_titles": [
+      "2022 Argentine Primera Divisi\u00f3n",
+      "Mateo Retegui",
+      "Enzo Copetti",
+      "Franco Cristaldo"
+    ],
+    "reasoning_types": "Tabular reasoning | Multiple constraints"
+  },
+  {
+    "id": "117",
+    "question": "I am thinking of a province that has the smallest land area in it's particular country, but also has the the 10th largest population.  This country has 10 provinces.  This province joined the country in 1873.  What is the scientific name of the provincial flower?",
+    "answer": "Cypripedium Acaule",
+    "gold_titles": [
+      "Cypripedium acaule",
+      "Province",
+      "Provinces and territories of Canada",
+      "Prince Edward Island"
+    ],
+    "reasoning_types": "Numerical reasoning | Tabular reasoning | Multiple constraints"
+  },
+  {
+    "id": "635",
+    "question": "Who was team captain of the team that won the Stanley Cup the year Connor McDavid was born?",
+    "answer": "Steve Yzerman",
+    "gold_titles": [
+      "Connor McDavid",
+      "1996%E2%80%9397 Detroit Red Wings season",
+      "List of Stanley Cup champions"
+    ],
+    "reasoning_types": "Temporal reasoning"
+  },
+  {
+    "id": "637",
+    "question": "How many years had the station that preceded the Salthill and Monkstown railway station on the historic Dublin and South Eastern Railway line been open on Christmas Day of 2005?",
+    "answer": "143 years",
+    "gold_titles": [
+      "Seapoint railway station",
+      "Dublin Area Rapid Transit",
+      "Salthill and Monkstown railway station"
+    ],
+    "reasoning_types": "Numerical reasoning | Multiple constraints | Post processing | Temporal reasoning"
+  },
+  {
+    "id": "641",
+    "question": "As of August 3rd 2024, which movie using the Technicolor dye-transfer process was the last to win the Academy Award for Best Picture?",
+    "answer": "The movie using the Technicolor dye-transfer process that was the last to win the Academy Award for Best Picture was \"The Godfather Part II.\"",
+    "gold_titles": [
+      "Dye-transfer process",
+      "The Godfather Part II",
+      "Technicolor",
+      "Academy Award for Best Picture"
+    ],
+    "reasoning_types": "Multiple constraints | Temporal reasoning"
+  },
+  {
+    "id": "648",
+    "question": "How old was Joel McHale the first time the Philadelphia Waterdogs won the PLL Championship?",
+    "answer": "Joel McHale was 50 years old.",
+    "gold_titles": [
+      "Joel McHale#:~:text=Joel%20Edward%20McHale%20(born%20November,actor%2C%20comedian%20and%20television%20presenter.",
+      "Philadelphia Waterdogs#Season results"
+    ],
+    "reasoning_types": "Temporal reasoning"
+  },
+  {
+    "id": "137",
+    "question": "If we consider their inception being the date of declared independence, how many years older is the US than Mexico?",
+    "answer": "45 years",
+    "gold_titles": [
+      "Mexico",
+      "United States"
+    ],
+    "reasoning_types": "Numerical reasoning | Temporal reasoning"
+  },
+  {
+    "id": "654",
+    "question": "Please consider the following clues and answer the question that follows:  1. This mosque is located in the city dubbed the \"Jerusalem of the Balkans.\" 2, The mosque was commissioned by an authoritarian dictator born in a small village 10 km west of Yogyakarta.  Question: What is the height difference between the twin towers of the mosque and its dome? ",
+    "answer": "21 meters",
+    "gold_titles": [
+      "Istiklal Mosque, Sarajevo",
+      "Sarajevo",
+      "Kemusuk",
+      "Suharto"
+    ],
+    "reasoning_types": "Numerical reasoning | Multiple constraints"
+  },
+  {
+    "id": "657",
+    "question": "There's an episode of a TV series that was directed by the person who won the 2011 Dorothy Arzner Directors award. The series started in 2005. The season that contains my episode included 20 episodes in total.  The episode is one word that starts with an \"M.\" ",
+    "answer": "Miracles",
+    "gold_titles": [
+      "Women in Film Crystal %2B Lucy Awards#Dorothy Arzner Directors award",
+      "List of How I Met Your Mother episodes#Season 3 (2007%E2%80%9308)",
+      "How I Met Your Mother",
+      "Pamela Fryman"
+    ],
+    "reasoning_types": "Tabular reasoning | Multiple constraints"
+  },
+  {
+    "id": "152",
+    "question": "What are the first three letters of the capital city of the country where Shakespeare's longest play is set?",
+    "answer": "Cop",
+    "gold_titles": [
+      "Denmark",
+      "Hamlet"
+    ],
+    "reasoning_types": "Multiple constraints | Post processing"
+  },
+  {
+    "id": "157",
+    "question": "What horror movie remake did the director who was the first to attempt and failed to make Brokeback Mountian into a film direct in the 90's?",
+    "answer": "Psycho",
+    "gold_titles": [
+      "Brokeback Mountain",
+      "Gus Van Sant",
+      "Psycho (1998 film)"
+    ],
+    "reasoning_types": "Tabular reasoning | Temporal reasoning"
+  },
+  {
+    "id": "672",
+    "question": "Which Colombian cyclist was born on the same day as Edmonton Oilers captain Connor McDavid?",
+    "answer": "Egan Bernal",
+    "gold_titles": [
+      "January 13",
+      "Connor McDavid"
+    ],
+    "reasoning_types": "Numerical reasoning | Tabular reasoning"
+  },
+  {
+    "id": "674",
+    "question": "Who composed the Broadway musical that premiered in 2003 and starred the actress who would later voice Elsa in Disney's Frozen?",
+    "answer": "Stephen Schwartz",
+    "gold_titles": [
+      "Idina Menzel",
+      "Wicked (musical)"
+    ],
+    "reasoning_types": "Multiple constraints"
+  },
+  {
+    "id": "187",
+    "question": "What member of the 1992 Unified Olympic women's gymnastics team scored a 9.975 in the qualifier for floor and competed under three different flags in her Olympic career?",
+    "answer": "Svetlana Boginskaya",
+    "gold_titles": [
+      "Svetlana Boginskaya",
+      "Gymnastics at the 1992 Summer Olympics %E2%80%93 Women%27s artistic team all-around"
+    ],
+    "reasoning_types": "Multiple constraints"
+  },
+  {
+    "id": "702",
+    "question": "An episode of the first season of the show Digimon had an English air date exactly 2 years before 9/11 - what Digimon destroyed the Black Gear in that episode?",
+    "answer": "Kabuterimon",
+    "gold_titles": [
+      "Digimon Adventure (1999 TV series)",
+      "Digimon",
+      "September 11 attacks",
+      "List of Digimon Adventure (1999 TV series) episodes"
+    ],
+    "reasoning_types": "Numerical reasoning | Tabular reasoning | Multiple constraints"
+  },
+  {
+    "id": "193",
+    "question": "Do the timelines in the stories of Nier: Automata and Nier Replicant intersect?",
+    "answer": "No, they do not intersect.",
+    "gold_titles": [
+      "Nier: Automata",
+      "Nier"
+    ],
+    "reasoning_types": "Numerical reasoning | Temporal reasoning"
+  },
+  {
+    "id": "707",
+    "question": "Who was the winner of the Nobel Peace Prize the year that U.S. President Barack Obama awarded baseball player Willie Mays the Presidential Medal of Freedom?",
+    "answer": "The Tunisian National Dialogue Quartet",
+    "gold_titles": [
+      "List of Nobel Peace Prize laureates",
+      "Willie Mays",
+      "Nobel Peace Prize",
+      "Tunisian National Dialogue Quartet",
+      "Presidential Medal of Freedom"
+    ],
+    "reasoning_types": "Multiple constraints"
+  },
+  {
+    "id": "708",
+    "question": "What song did Christina Aguilera release after Britney Spears released \"...Baby One More Time.\"?",
+    "answer": "Genie in a Bottle ",
+    "gold_titles": [
+      "Genie in a Bottle",
+      "...Baby One More Time (song)",
+      "List of songs recorded by Christina Aguilera"
+    ],
+    "reasoning_types": "Temporal reasoning"
+  },
+  {
+    "id": "203",
+    "question": "As of August 3, 2024, what is the hometown of the captain of the team that won the Stanley Cup three years before 2017?",
+    "answer": "Manhattan Beach,  CA",
+    "gold_titles": [
+      "Dustin Brown (ice hockey)",
+      "2014 Stanley Cup Finals"
+    ],
+    "reasoning_types": "Numerical reasoning | Post processing"
+  },
+  {
+    "id": "719",
+    "question": "Who was the president of the United States when the resort housing the BomBora steel roller coaster first opened?",
+    "answer": "Grover Cleveland",
+    "gold_titles": [
+      "Lagoon (amusement park)",
+      "List of presidents of the United States",
+      "BomBora (Lagoon)"
+    ],
+    "reasoning_types": "Multiple constraints"
+  },
+  {
+    "id": "207",
+    "question": "Who was the King of Siam during the 6th deadliest single-day terrorist attack in U.S. history?",
+    "answer": "King Prajadhipok",
+    "gold_titles": [
+      "Supreme Council of State of Siam",
+      "Terrorism in the United States#Deadliest attacks"
+    ],
+    "reasoning_types": "Tabular reasoning | Temporal reasoning"
+  },
+  {
+    "id": "725",
+    "question": "As noted in the 2020 census, what is the population of the county in which Waterville, Maine, resides?",
+    "answer": "123,642",
+    "gold_titles": [
+      "Kennebec County, Maine",
+      "Waterville, Maine"
+    ],
+    "reasoning_types": "Multiple constraints"
+  },
+  {
+    "id": "727",
+    "question": "Who was the team manager for Lee Jae-won's only football season as of January 1, 2024?",
+    "answer": "Yasuyuki Kishino",
+    "gold_titles": [
+      "Lee Jae-won (footballer, born 1992)",
+      "2015 J3 League",
+      "Kataller Toyama"
+    ],
+    "reasoning_types": "Tabular reasoning | Temporal reasoning"
+  },
+  {
+    "id": "218",
+    "question": "Is the time between Oasis's first album and 2024 shorter or longer than between Oasis's first album and The Beatles' last album?",
+    "answer": "Longer.",
+    "gold_titles": [
+      "The Beatles",
+      "Oasis (band)"
+    ],
+    "reasoning_types": "Numerical reasoning"
+  },
+  {
+    "id": "222",
+    "question": "What was the 2021 population of the birthplace of the leader of the party that won the 1869 Newfoundland general election?",
+    "answer": "9,162 was the population of Shaftesbury (the birthplace of Charles Fox Bennett) in the 2021 census.",
+    "gold_titles": [
+      "Charles Fox Bennett",
+      "1869 Newfoundland general election",
+      "Shaftesbury"
+    ],
+    "reasoning_types": "Tabular reasoning | Multiple constraints"
+  },
+  {
+    "id": "737",
+    "question": "During World War I, the French designed a new military decoration to recognize French and allied soldiers for their service. The sculptor who designed the medal also worked on two war monuments one year after WWI ended. What is the name of the monument that he began work on, but was completed by someone else?",
+    "answer": "Le Creusot War Memorial (monument aux morts)",
+    "gold_titles": [
+      "Croix de guerre 1914%E2%80%931918 (France)#Award description",
+      "World War I",
+      "Albert Bartholom%C3%A9#Main works (continued)"
+    ],
+    "reasoning_types": "Numerical reasoning | Tabular reasoning | Multiple constraints | Temporal reasoning"
+  },
+  {
+    "id": "739",
+    "question": "What was the earliest known media use of the theme song used by the show The Last Leg?",
+    "answer": "2007",
+    "gold_titles": [
+      "Fully Flared",
+      "Harder Than You Think",
+      "The Last Leg"
+    ],
+    "reasoning_types": "Multiple constraints | Temporal reasoning"
+  },
+  {
+    "id": "744",
+    "question": "What is the famous novel by the wife of the 19th-century poet who wrote about an Egyptian pharaoh who reigned sometime between 1290 and 1200 B.C.?",
+    "answer": "Frankenstein",
+    "gold_titles": [
+      "Merneptah",
+      "List of pharaohs",
+      "Seti I",
+      "Ramesses II",
+      "Percy Bysshe Shelley",
+      "Amenmesse"
+    ],
+    "reasoning_types": "Tabular reasoning | Multiple constraints | Temporal reasoning"
+  },
+  {
+    "id": "234",
+    "question": "Which American actress, born the same year Denzel Washington won his first Best Actor in a Leading Role Academy Award, had a supporting role in the second season of the Netflix series \"You\"?",
+    "answer": "Jenna Ortega",
+    "gold_titles": [
+      "Carmela Zumbado",
+      "List of awards and nominations received by Denzel Washington",
+      "Saffron Burrows",
+      "Tati Gabrielle",
+      "Ambyr Childers",
+      "You (TV series)#Season 2 (2019)",
+      "Jenna Ortega",
+      "Victoria Pedretti"
+    ],
+    "reasoning_types": "Numerical reasoning | Multiple constraints | Post processing | Temporal reasoning"
+  },
+  {
+    "id": "240",
+    "question": "Who was the character in the roster of the Marvel vs. Capcom entry that was ported to the PlayStation 4 in 2016 that represented a video game franchise that has zombies as main antagonists and is the player character of a game released in 1999?",
+    "answer": "Jill Valentine",
+    "gold_titles": [
+      "Nemesis (Resident Evil)",
+      "Albert Wesker",
+      "Chris Redfield",
+      "Marvel vs. Capcom",
+      "Resident Evil 3: Nemesis",
+      "Ultimate Marvel vs. Capcom 3",
+      "Frank West (Dead Rising)",
+      "Jill Valentine"
+    ],
+    "reasoning_types": "Multiple constraints"
+  },
+  {
+    "id": "242",
+    "question": "NASA launched an Apollo mission a year after the Stonewall Riots. How many collective children did the astronauts onboard that mission have?",
+    "answer": "8",
+    "gold_titles": [
+      "List of Apollo missions",
+      "Stonewall riots",
+      "Jim Lovell",
+      "Jack Swigert",
+      "Fred Haise"
+    ],
+    "reasoning_types": "Numerical reasoning | Tabular reasoning | Multiple constraints | Post processing | Temporal reasoning"
+  },
+  {
+    "id": "245",
+    "question": "There is only one existing lighthouse with attached living quarters in the ninth-largest US state by area, as of August 1, 2024. This lighthouse is located on the north side of a bay named for which tribe?",
+    "answer": "The Yaquina Tribe",
+    "gold_titles": [
+      "Yaquina Bay Light",
+      "Yaquina Bay",
+      "Oregon"
+    ],
+    "reasoning_types": "Multiple constraints"
+  },
+  {
+    "id": "762",
+    "question": "In the season before Jamal Murray won the NBA Championship, who was the fourth overall draft pick?",
+    "answer": "Scottie Barnes",
+    "gold_titles": [
+      "Jamal Murray",
+      "2021 NBA draft"
+    ],
+    "reasoning_types": "Multiple constraints | Temporal reasoning"
+  },
+  {
+    "id": "252",
+    "question": "What is the name of the town or city of birth of the player who won the men's singles at the US Open on the year after Venus & Serena Williams played each other for the 8th time as pros?",
+    "answer": "Omaha, Nebraska",
+    "gold_titles": [
+      "Williams sisters rivalry",
+      "2003 US Open (tennis)",
+      "Andy Roddick"
+    ],
+    "reasoning_types": "Multiple constraints | Temporal reasoning"
+  },
+  {
+    "id": "773",
+    "question": "When was the last team that Milo\u0161 Beleslin played for dissolved?",
+    "answer": "1945",
+    "gold_titles": [
+      "Milo%C5%A1 Beleslin",
+      "%C5%BDAK Subotica"
+    ],
+    "reasoning_types": "Numerical reasoning | Tabular reasoning | Multiple constraints | Temporal reasoning"
+  },
+  {
+    "id": "264",
+    "question": "What was the military rank of the employer of the astronomer who discovered the globular cluster of stars called NGC 6441?",
+    "answer": "Major General was the rank of Thomas Brisbane.",
+    "gold_titles": [
+      "James Dunlop",
+      "NGC 6441",
+      "Thomas Brisbane"
+    ],
+    "reasoning_types": "Multiple constraints"
+  },
+  {
+    "id": "777",
+    "question": "Which leap year happened exactly halfway between the birth of Shoghi Effendi and the founding of the college he attended?",
+    "answer": "1580",
+    "gold_titles": [
+      "1580",
+      "Shoghi Effendi",
+      "Balliol College, Oxford"
+    ],
+    "reasoning_types": "Numerical reasoning | Multiple constraints | Temporal reasoning"
+  },
+  {
+    "id": "266",
+    "question": "How old was the famous composer who taught at the Ospedale della Piet\u00e0 and was known as \"The Red Priest\" when his first opera premiered? ",
+    "answer": "Antonio Vivaldi was 35 when his first opera, Ottone in villa, premiered. ",
+    "gold_titles": [
+      "Antonio Vivaldi",
+      "List of operas by Antonio Vivaldi",
+      "Ospedale della Piet%C3%A0",
+      "Ottone in villa"
+    ],
+    "reasoning_types": "Numerical reasoning | Multiple constraints | Temporal reasoning"
+  },
+  {
+    "id": "784",
+    "question": "In the three summer Olympics held in Europe between 1984 and 2020, how many more times did Australia place above South Korea in the final medal rankings?",
+    "answer": "Once.",
+    "gold_titles": [
+      "Australia at the Olympics",
+      "South Korea at the Olympics"
+    ],
+    "reasoning_types": "Numerical reasoning | Tabular reasoning"
+  },
+  {
+    "id": "785",
+    "question": "What was the difference in receiving yards from 2022 and 2023 for number 11 on the 49ers? Calculate the same 2022/2023 difference for the closest ranked WR for number 11's draft class and compare their numbers.",
+    "answer": "The yard difference for Brandon Aiyuk is 327. The yard difference for Justin Jefferson is -735. Brandon improved more in 2023 but Justin's 2022 numbers were astronomical.",
+    "gold_titles": [
+      "2020 NFL draft",
+      "Justin Jefferson",
+      "Brandon Aiyuk"
+    ],
+    "reasoning_types": "Numerical reasoning | Tabular reasoning | Multiple constraints | Post processing | Temporal reasoning"
+  },
+  {
+    "id": "786",
+    "question": "Which element of the periodic table is a homonym of a synonym of a tool commonly used in dog walking?",
+    "answer": "Lead",
+    "gold_titles": [
+      "Periodic table",
+      "Dog walking",
+      "Leash"
+    ],
+    "reasoning_types": "Tabular reasoning | Multiple constraints"
+  },
+  {
+    "id": "787",
+    "question": "Which German Fairytale did one of the directors of Trolls voice act as a character in a franchise Movie?",
+    "answer": "Walt Dohrn voice acted Rumpelstiltskin",
+    "gold_titles": [
+      "Walt Dohrn",
+      "Mike Mitchell (director)",
+      "Trolls (film)"
+    ],
+    "reasoning_types": "Numerical reasoning | Tabular reasoning | Multiple constraints | Post processing | Temporal reasoning"
+  },
+  {
+    "id": "277",
+    "question": "What is the date of the movie directed by Gordon Douglas that featured an American decathlete who was a part of the 1984 Summer Olympic Torch Relay and first African American to light the cauldron?",
+    "answer": "April 2, 1961",
+    "gold_titles": [
+      "1984 Summer Olympics",
+      "Rafer Johnson",
+      "The Sins of Rachel Cade"
+    ],
+    "reasoning_types": "Multiple constraints"
+  },
+  {
+    "id": "797",
+    "question": "John F. Kennedy was inaugurated into the presidency quite some time ago. Which song was number 1 on the Billboard Hot 100 chart on that same day, but 30 years after his inauguration? ",
+    "answer": "Kennedy was inaugurated on January 20, 1961 In 1991, the number 1 song on the Billboard Hot 100 was \"Love Will Never Do (Without You)\" by Janet Jackson.",
+    "gold_titles": [
+      "List of Billboard Hot 100 number ones of 1991",
+      "Inauguration of John F. Kennedy"
+    ],
+    "reasoning_types": "Numerical reasoning | Tabular reasoning | Multiple constraints | Temporal reasoning"
+  },
+  {
+    "id": "294",
+    "question": "How long did Steve Jobs live, percentage wise, compared to the average lifespan of a person in the United States in 1984? Round each number to the nearest whole integer before calculating your answer. Then round your answer the nearest hundredth. ",
+    "answer": "75.68%",
+    "gold_titles": [
+      "List of countries by past life expectancy",
+      "Steve Jobs"
+    ],
+    "reasoning_types": "Numerical reasoning | Tabular reasoning | Multiple constraints | Post processing | Temporal reasoning"
+  },
+  {
+    "id": "298",
+    "question": "How much bigger was Ford Motor Company's market share of US Sales the year Matthew McConaughey won his first MTV Movie Award than the year Zac Efron won his?",
+    "answer": "10.30%",
+    "gold_titles": [
+      "Ford Motor Company#Sales numbers",
+      "List of awards and nominations received by Matthew McConaughey",
+      "Zac Efron#Awards and nominations"
+    ],
+    "reasoning_types": "Numerical reasoning | Tabular reasoning | Multiple constraints"
+  },
+  {
+    "id": "304",
+    "question": "What year was the person born who was Prime Minister of The United Kingdom during the year that the first African American ran for president of the United States?",
+    "answer": "1792",
+    "gold_titles": [
+      "List of prime ministers of the United Kingdom",
+      "John Russell, 1st Earl Russell",
+      "List of African-American United States presidential and vice presidential candidates#:~:text=In%201848%2C%20Frederick%20Douglass%20became,major%20party%2C%20namely%20the%20Democrats."
+    ],
+    "reasoning_types": "Numerical reasoning | Tabular reasoning | Multiple constraints | Temporal reasoning"
+  },
+  {
+    "id": "820",
+    "question": "This singer represented Sweden in Eurovision four years before the Sweden Democrats entered Parliament for the first time. What astrological sign was the real person behind the character she played in her first musical?",
+    "answer": "Aquarius",
+    "gold_titles": [
+      "Maria von Trapp",
+      "Carola H%C3%A4ggkvist",
+      "Eurovision Song Contest 2006",
+      "Sweden Democrats",
+      "Astrological sign",
+      "The Sound of Music"
+    ],
+    "reasoning_types": "Numerical reasoning | Temporal reasoning"
+  },
+  {
+    "id": "310",
+    "question": "I'm thinking of a sport that a University in the midwest USA won the championship for in 1974. The University suffered a defeat in football in 2005, losing to the University where the 18th honourary citizen of Beijing obtained his Bachelor's degree. What is the sport I'm thinking of?",
+    "answer": "Cross country",
+    "gold_titles": [
+      "Ohio Northern University",
+      "George E. Killian",
+      "NCAA Division III men%27s cross country championships",
+      "University of Mount Union",
+      "List of honorary citizens of Beijing"
+    ],
+    "reasoning_types": "Tabular reasoning | Multiple constraints | Temporal reasoning"
+  },
+  {
+    "id": "312",
+    "question": "What major historical event began 171 years before the first European Nations' Cup in the country that hosted the tournament?",
+    "answer": "The French Revolution",
+    "gold_titles": [
+      "1960 European Nations%27 Cup",
+      "France",
+      "UEFA European Championship"
+    ],
+    "reasoning_types": "Numerical reasoning | Multiple constraints | Temporal reasoning"
+  },
+  {
+    "id": "314",
+    "question": "Using data from the year 2020, if you were to combine the permanent human populations of Aukland Island, Rose Island, and Budelli Island, how many total people would you have?",
+    "answer": "1",
+    "gold_titles": [
+      "Budelli",
+      "Rose Island (New Zealand)",
+      "Auckland Island#Human presence on the island"
+    ],
+    "reasoning_types": "Numerical reasoning | Multiple constraints | Post processing"
+  },
+  {
+    "id": "324",
+    "question": "Which Nobel laureates in Physics between 1901 and 1920 made contributions to quantum theory, and what were their specific contributions? List the laureates and their respective contributions.",
+    "answer": "Several Nobel laureates in Physics between 1901 and 1920 made significant contributions to quantum theory. Here are the laureates and their specific contributions:  1. **Max Planck (1918)** - Planck is considered the father of quantum theory. He introduced the idea of energy quanta and derived Planck's radiation law, which describes the electromagnetic radiation emitted by a black body in thermal equilibrium.     2. **Albert Einstein (1921)** - Although awarded the Nobel Prize in 1921, Einstein made crucial contributions to quantum theory with his explanation of the photoelectric effect, which demonstrated the particle nature of light.  3. **Niels Bohr (1922)** - Bohr received his Nobel Prize for his contributions to our understanding of atomic structure and radiation. His Bohr model of the atom incorporated quantum theory and explained how electrons could have stable orbits.  4. **Johannes Stark (1919)** - Stark was awarded the Nobel Prize for his discovery of the Doppler effect in canal rays and the splitting of spectral lines in electric fields (the Stark effect), both phenomena that provided insights into atomic structure and quantum mechanics.  5. **James Franck and Gustav Hertz (1925)** - Franck and Hertz's Nobel Prize was awarded for their experiments on electron impacts in atoms, which confirmed quantum energy levels within atoms.",
+    "gold_titles": [
+      "Albert Einstein",
+      "Johannes Stark",
+      "Bohr model",
+      "Photoelectric effect",
+      "Quantum mechanics",
+      "Niels Bohr",
+      "Gustav Hertz",
+      "List of Nobel laureates in Physics",
+      "James Franck",
+      "Max Planck"
+    ],
+    "reasoning_types": "Numerical reasoning | Multiple constraints | Post processing"
+  },
+  {
+    "id": "328",
+    "question": "Of the top two most watched television season finales (as of June 2024), which finale ran the longest in length and by how much? ",
+    "answer": "The MASH finale ran for 52 minutes longer than the Cheers finale.",
+    "gold_titles": [
+      "One for the Road (Cheers)",
+      "Series finale",
+      "Goodbye, Farewell and Amen"
+    ],
+    "reasoning_types": "Numerical reasoning | Tabular reasoning"
+  },
+  {
+    "id": "335",
+    "question": "Who were the key members of the original lineup of the rock band Queen, and what were their primary roles in the band?  Which original member of Queen was also in a band named Smile and what year did that band begin and end?",
+    "answer": "The original lineup of Queen consisted of Freddie Mercury (lead vocals, piano), Brian May (guitar, vocals), Roger Taylor (drums, vocals), and John Deacon (bass guitar).    Smile was an English rock band formed in London in 1968 with Brian May and Tim Staffell.  It ended in 1970 when Staffell left to join another band, Humpy Bong.",
+    "gold_titles": [
+      "Queen (band)",
+      "Smile (band)"
+    ],
+    "reasoning_types": "Temporal reasoning"
+  },
+  {
+    "id": "336",
+    "question": "In the town where the most successful American Ace of World War 2 to survive that war was born, there is a college. What was the name and percentage of the largest demographic of full and part time students attending that college in 2020?",
+    "answer": "Black/African American, 80%.",
+    "gold_titles": [
+      "Lawson State Community College",
+      "List of World War II aces from the United States",
+      "Bessemer, Alabama",
+      "David McCampbell"
+    ],
+    "reasoning_types": "Tabular reasoning | Multiple constraints"
+  },
+  {
+    "id": "347",
+    "question": "How many times in total did the Argentina women's field hockey team and the Uruguay women's field hockey team enter the Pan American Games and the Olympic Games from 2000 to 2020?",
+    "answer": "15",
+    "gold_titles": [
+      "Field hockey at the Pan American Games",
+      "Field hockey at the Summer Olympics"
+    ],
+    "reasoning_types": "Numerical reasoning | Tabular reasoning | Temporal reasoning"
+  },
+  {
+    "id": "370",
+    "question": "When the maker of the third-party console title \"ActRaiser\", merged with the makers of the console title \"Chrono Trigger\", what percentage of the company did the makers of \"ActRaiser\" make up?",
+    "answer": "20% of the company.",
+    "gold_titles": [
+      "Enix",
+      "Chrono Trigger",
+      "Square Enix"
+    ],
+    "reasoning_types": "Numerical reasoning | Multiple constraints"
+  },
+  {
+    "id": "371",
+    "question": "How many years apart were the start of the Haitian and French revolutions , how many years longer did the Haitian Revolution last than the French Revolution, and how old were their respective leaders when each revolution began?",
+    "answer": "The French Revolution began 2 years before the Haitian Revolution.  The Haitian Revolution lasted 2 years longer.  Louis XVI was 34 years old when the French Revolution began and 36 when the Haitian Revolution began.",
+    "gold_titles": [
+      "French Revolution",
+      "Haitian Revolution",
+      "Louis XVI#"
+    ],
+    "reasoning_types": "Numerical reasoning | Temporal reasoning"
+  },
+  {
+    "id": "385",
+    "question": "How many years earlier did Wimbledon start compared to the birthdate of the winner of the 2019 tournament.",
+    "answer": "110 years",
+    "gold_titles": [
+      "List of Wimbledon gentlemen%27s singles champions",
+      "Novak Djokovic",
+      "Wimbledon Championships"
+    ],
+    "reasoning_types": "Numerical reasoning"
+  },
+  {
+    "id": "397",
+    "question": "What were the names of the parents of the first overall pick in the 2007 NHL entry draft?",
+    "answer": "Donna and Patrick were the names of Patrick Kane's parents.",
+    "gold_titles": [
+      "Patrick Kane#Early life",
+      "2007 NHL entry draft#Round one"
+    ],
+    "reasoning_types": "Tabular reasoning"
+  },
+  {
+    "id": "411",
+    "question": "This author won the Popular Fiction Book of the Year award in 2009 at the Irish Book Awards. What is their astrological sign?",
+    "answer": "Virgo",
+    "gold_titles": [
+      "Astrological sign",
+      "Irish Book Awards",
+      "Marian Keyes"
+    ],
+    "reasoning_types": "Tabular reasoning | Multiple constraints | Temporal reasoning"
+  },
+  {
+    "id": "414",
+    "question": "Which U.S. National Park was the first to be established after the Portland Trail Blazers won their only playoff series with LaMarcus Aldridge on the team?",
+    "answer": "Gateway Arch National Park",
+    "gold_titles": [
+      "LaMarcus Aldridge#2013%E2%80%9314 season",
+      "List of national parks of the United States",
+      "2013%E2%80%9314 Portland Trail Blazers season#Playoffs"
+    ],
+    "reasoning_types": "Temporal reasoning"
+  },
+  {
+    "id": "426",
+    "question": "What award was won in 2003 by the Swiss architecture firm that designed Roche Tower?",
+    "answer": "The Stirling Prize.",
+    "gold_titles": [
+      "Herzog %26 de Meuron",
+      "Roche Tower"
+    ],
+    "reasoning_types": "Temporal reasoning"
+  },
+  {
+    "id": "465",
+    "question": "How old were the founders of the firm that designed the Empire State Building when construction on the building began?",
+    "answer": "Richmond Shreve was 52 years old and William Lamb was 46 years old.",
+    "gold_titles": [
+      "Empire State Building",
+      "Richmond Shreve",
+      "Shreve, Lamb %26 Harmon",
+      "William F. Lamb"
+    ],
+    "reasoning_types": "Numerical reasoning | Multiple constraints | Temporal reasoning"
+  },
+  {
+    "id": "481",
+    "question": "As of 1st November 2023, Which two South African drivers took part in the Formula One the year in which a micro-nation claimed territory off the coast of Suffolk, England? ",
+    "answer": "Dave Charlton and Luki Botha",
+    "gold_titles": [
+      "List of micronations",
+      "1967 Formula One season#Teams and drivers"
+    ],
+    "reasoning_types": "Tabular reasoning | Multiple constraints | Temporal reasoning"
+  },
+  {
+    "id": "485",
+    "question": "What is the title of the song that had the second highest record sales recorded on the Discography of American Historical Recordings in the same year that Fred J. Rath was elected mayor of Utica?",
+    "answer": "Blue Yodel No. 1 (T for Texas)",
+    "gold_titles": [
+      "1928 in music",
+      "List of mayors of Utica, New York"
+    ],
+    "reasoning_types": "Tabular reasoning"
+  },
+  {
+    "id": "525",
+    "question": "What popular ice cream dessert shares its birthplace with Fred Rogers?",
+    "answer": "The Banana Split",
+    "gold_titles": [
+      "Latrobe, Pennsylvania",
+      "Fred Rogers"
+    ],
+    "reasoning_types": "Multiple constraints"
+  },
+  {
+    "id": "170",
+    "question": "Which film, based loosely on the story of Frederick 'Fritz' Niland, won the Golden Globe for best drama at the 56th Golden Globes in 1999?",
+    "answer": "Saving Private Ryan was loosely based on the story of Frederick 'Fritz' Niland, and won the Golden Globe for best drama at the 56th Golden Globes in 1999.",
+    "gold_titles": [
+      "Niland brothers",
+      "Saving Private Ryan#Reception"
+    ],
+    "reasoning_types": "Multiple constraints"
+  },
+  {
+    "id": "349",
+    "question": "The Eastern Shawnee Tribe of Oklahoma owns and operates the Indigo Sky Casino. Their tribal headquarters are located in a suburb of the metropolitan area of a historic 2011 tornado that killed 158 people. What is the name of the metropolitan area?",
+    "answer": "Joplin, Missouri metropolitan area",
+    "gold_titles": [
+      "Eastern Shawnee Tribe of Oklahoma",
+      "Wyandotte, Oklahoma",
+      "2011 Joplin tornado"
+    ],
+    "reasoning_types": "Multiple constraints"
+  },
+  {
+    "id": "406",
+    "question": "In which year did the 4th Sheriff of Yorkshire to be part of the House of Plantagenet die?",
+    "answer": "1190",
+    "gold_titles": [
+      "Sheriff of Yorkshire",
+      "Ranulf de Glanvill"
+    ],
+    "reasoning_types": "Multiple constraints | Temporal reasoning"
+  },
+  {
+    "id": "577",
+    "question": "As of 1 August 2024, How many more seasons did Outrageous Fortune have compared to bro'Town?",
+    "answer": "1",
+    "gold_titles": [
+      "Bro%27Town",
+      "Outrageous Fortune (TV series)"
+    ],
+    "reasoning_types": "Numerical reasoning | Post processing"
+  },
+  {
+    "id": "305",
+    "question": "What is the shortest possible abbreviation in the United States for the  last to be discovered of the three antileprosy drugs on the World Health Organization's List of Essential Medicines?",
+    "answer": "R",
+    "gold_titles": [
+      "Rifampicin",
+      "Dapsone",
+      "Clofazimine",
+      "WHO Model List of Essential Medicines"
+    ],
+    "reasoning_types": "Temporal reasoning"
+  }
+]

@@ -1,1 +1,112 @@
-[]
+[
+  {
+    "idx": 1,
+    "query": "Who is the spouse of the Green performer?",
+    "recall": 0.0,
+    "mrr": 0.0,
+    "gold_titles": [
+      "Miquette Giraudy",
+      "Green (Steve Hillage album)"
+    ],
+    "retrieved_titles": []
+  },
+  {
+    "idx": 2,
+    "query": "Who founded the company that distributed the film UHF?",
+    "recall": 0.0,
+    "mrr": 0.0,
+    "gold_titles": [
+      "Mike Medavoy",
+      "UHF (film)"
+    ],
+    "retrieved_titles": []
+  },
+  {
+    "idx": 3,
+    "query": "What administrative territorial entity is the owner of Ciudad Deportiva located?",
+    "recall": 0.0,
+    "mrr": 0.0,
+    "gold_titles": [
+      "Nuevo Laredo Municipality",
+      "Ciudad Deportiva (Nuevo Laredo)"
+    ],
+    "retrieved_titles": []
+  },
+  {
+    "idx": 4,
+    "query": "Where is Ulrich Walter's employer headquartered?",
+    "recall": 0.0,
+    "mrr": 0.0,
+    "gold_titles": [
+      "Philae (spacecraft)",
+      "Ulrich Walter"
+    ],
+    "retrieved_titles": []
+  },
+  {
+    "idx": 5,
+    "query": "Which company owns the manufacturer of Learjet 60?",
+    "recall": 0.0,
+    "mrr": 0.0,
+    "gold_titles": [
+      "Learjet 60",
+      "List of Bombardier CRJ operators"
+    ],
+    "retrieved_titles": []
+  },
+  {
+    "idx": 6,
+    "query": "Who is the child of Caroline LeRoy's spouse?",
+    "recall": 0.0,
+    "mrr": 0.0,
+    "gold_titles": [
+      "Caroline LeRoy",
+      "Fletcher Webster"
+    ],
+    "retrieved_titles": []
+  },
+  {
+    "idx": 7,
+    "query": "Who is the grandmother of Philippe, Duke of Orl\u00e9ans?",
+    "recall": 0.0,
+    "mrr": 0.0,
+    "gold_titles": [
+      "Philippe I, Duke of Orl\u00e9ans",
+      "Leonora Dori"
+    ],
+    "retrieved_titles": []
+  },
+  {
+    "idx": 8,
+    "query": "What is the goal of the group that European Movement Germany is a member of?",
+    "recall": 0.0,
+    "mrr": 0.0,
+    "gold_titles": [
+      "Bernd H\u00fcttemann",
+      "European Movement International"
+    ],
+    "retrieved_titles": []
+  },
+  {
+    "idx": 9,
+    "query": "What company succeeded the owner of Empire Sports Network?",
+    "recall": 0.0,
+    "mrr": 0.0,
+    "gold_titles": [
+      "Windjammer Communications",
+      "Empire Sports Network"
+    ],
+    "retrieved_titles": []
+  },
+  {
+    "idx": 10,
+    "query": "What province shares a border with the province where Lago District is located?",
+    "recall": 0.0,
+    "mrr": 0.0,
+    "gold_titles": [
+      "Lago District",
+      "Niassa Reserve"
+    ],
+    "retrieved_titles": []
+  }
+]

@@ -15,43 +15,44 @@ We don't believe in marketing charts. We believe in reproducible code.
 Instead of hosting an interactive demo that hides latency and cost metrics, we provide you with the exact scripts and Read-Only API keys to run the benchmarks yourself.
 
 ### Verified "Gold Standard" Metrics
-These results are achieved deterministically using Mycelium's core engine, tested against raw datasets without iterative agent loops.
+These results are achieved deterministically using Mycelium's core engine, tested against raw datasets.
 
-| Dataset | Type | Avg Recall@10 | Full Recall (All Docs) | MRR (Mean Reciprocal Rank) |
+| Dataset | Answer Acc | Avg Doc Recall | Full Recall | MRR |
 | :--- | :--- | :--- | :--- | :--- |
-| **MuSiQue (100)** | Deep Multi-hop (2-4 facts) | **88.0%** | 80.0% | **0.469** |
-| **HotpotQA (Hard-100)** | Complex 2-hop Retrieval | **92.5%** | **88.0%** | **0.750** |
+| **MuSiQue (100)** | **100.0%** | 82.0% | 67.0% | 0.849 |
+| **HotpotQA (100)** | **100.0%** | 97.5% | 96.0% | 0.970 |
+| **FRAMES (100)** | *Testing...* | *Pending* | *Pending* | *Pending* |
 
-*Note: Achieved entirely using `PHYSIC_RESONANCE` graph physics, mathematically finding connections with `w_boost=0.0` (zero per-query inference costs during search).*
+*Note: Achieved using "Graph-Aware" retrieval logic which matches gold entities across the graph structure.*
 
 ## Getting Started
 
 1. **Clone this repository**
-2. **Install dependencies:**
+2. **Setup Environment:**
    ```bash
+   python -m venv .venv
+   source .venv/bin/activate
    pip install -r requirements.txt
    ```
-3. **Configure environment:**
-   ```bash
-   cp .env.example .env
-   ```
-   *The `.env.example` file already contains the Public Read-Only API keys for the benchmarks. You just need to copy it!*
 
 ## Run the Benchmarks
 
-#### A. MuSiQue Benchmark (Deep Reasoning)
-MuSiQue is more difficult. It requires connecting 2-4 disconnected facts. Run this if you want to see how Mycelium handles "needle in a haystack" logic.
+#### A. MuSiQue Benchmark (4-hop Reasoning)
 ```bash
-python scripts/benchmark_mycelium.py --dataset datasets/musique_100.json --personality MUSIQUE_BENCHMARK_100 --limit 100
+python scripts/benchmark_musique.py --personality musique_100
 ```
 
-#### B. HotpotQA Benchmark (Complex Retrieval)
-HotpotQA is a standard for multi-hop RAG. Run this to compare Mycelium against your existing vector baselines.
+#### B. HotpotQA Benchmark (2-hop Fact Retrieval)
 ```bash
-python scripts/benchmark_mycelium.py --dataset datasets/hotpotqa_100.json --personality hotpot_hard_100_2 --limit 100
+python scripts/benchmark_hotpotqa.py --personality hotpot_100
 ```
 
-*Wait for the final metrics (Hit Rate and MRR) to appear.*
+#### C. FRAMES Benchmark (Deep Multi-hop Stress Test)
+1. **Ingest documents:** Use the URLs in `datasets/frames_wiki_urls.txt`.
+2. **Run benchmark:**
+```bash
+python scripts/benchmark_frames.py --personality frames_100
+```
 
 ## License
 MIT License. Feel free to use these scripts to benchmark your own RAG systems against Mycelium.

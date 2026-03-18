@@ -1,1 +1,9 @@
 .env
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+*.json
+!datasets/*.json
+!package.json
+!tsconfig.json
